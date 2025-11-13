@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "44364675085",
+    "project_id": "mybookswap-app-b7864",
+    "storage_bucket": "mybookswap-app-b7864.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44364675085:android:b1c9ea5dbc41826412bd44",
+        "android_client_info": {
+          "package_name": "com.example.mybookswap_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44364675085-mb9gkat7knno7bt8b2d78bhumul0fhub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mybookswap_app",
+            "certificate_hash": "38f5ba5e9e4afc5d77ad940e1ce62622fd9853f3"
+          }
+        },
+        {
+          "client_id": "44364675085-7nc64vk3b232emd3i68as4p2gk1i2fo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAETZbpG40Yia1AM4qYoJVj4HimFZomqww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44364675085-7nc64vk3b232emd3i68as4p2gk1i2fo1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "44364675085-dh6smrcorr5pifgjg5e0n2n6dgoannan.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mybookswapApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Users can read and write their own user documents
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Books can be read by authenticated users, written by owners
+    match /books/{bookId} {
+      allow read: if request.auth != null;
+      allow create: if request.auth != null && request.auth.uid == request.resource.data.ownerId;
+      allow update, delete: if request.auth != null && request.auth.uid == resource.data.ownerId;
+    }
+
+    // Swaps can be read/written by involved parties
+    match /swaps/{swapId} {
+      allow read, write: if request.auth != null &&
+        (request.auth.uid == resource.data.senderId || request.auth.uid == resource.data.recipientId);
+    }
+
+    // Messages can be read/written by involved parties
+    match /messages/{messageId} {
+      allow read, write: if request.auth != null &&
+        (request.auth.uid == resource.data.senderId || request.auth.uid == resource.data.recipientId);
+    }
+  }
+}

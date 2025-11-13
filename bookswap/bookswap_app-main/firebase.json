@@ -1,0 +1,39 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "emulators": {
+    "firestore": {
+      "port": 8081
+    },
+    "ui": {
+      "enabled": true
+    }
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "mybookswap-app-b7864",
+          "appId": "1:44364675085:android:b1c9ea5dbc41826412bd44",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "mybookswap-app-b7864",
+          "configurations": {
+            "android": "1:44364675085:android:b1c9ea5dbc41826412bd44",
+            "ios": "1:44364675085:ios:46acb6d6c5e4bb3d12bd44",
+            "macos": "1:44364675085:ios:46acb6d6c5e4bb3d12bd44",
+            "web": "1:44364675085:web:3662cad64187e9ca12bd44",
+            "windows": "1:44364675085:web:a0facf29c85e53b012bd44"
+          }
+        }
+      }
+    }
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
